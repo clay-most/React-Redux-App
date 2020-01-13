@@ -9,7 +9,7 @@ import {
   FETCH_PAGE_FAIL
 } from "../actions/index";
 
-const initailState = {
+const initialState = {
   pokemon: [],
   error: "",
   getting: false,
@@ -17,7 +17,7 @@ const initailState = {
   last: "https://pokeapi.co/api/v2/pokemon?limit=20&offset=20"
 };
 
-const reducer = (state = initalState, action) => {
+const reducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_POKEMON_START:
       return {
